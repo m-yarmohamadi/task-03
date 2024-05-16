@@ -1,7 +1,5 @@
 import Cart from '@/components/Cart';
 import Factor from '@/components/Factor';
-import PN from 'persian-number';
-import { PiStorefrontDuotone, PiReceiptDuotone } from 'react-icons/pi';
 
 export default function Home() {
 	return (
