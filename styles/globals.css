@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url("./fonts.css");
+:root{
+    background-color: #eeeeee;
+    direction: rtl;
+}
+
+body:{
+    font-family: "Vazirmatn";
+}
