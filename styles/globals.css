@@ -1,13 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('./fonts.css');
 
-
-@import url("./fonts.css");
-:root{
-    direction: rtl;
+@layer base {
+	:root {
+		&,
+		&.dark-mode {
+			--background-app-rgb: 30, 41, 59;
+			--color-primary-01: 30, 41, 59;
+			--color-primary-02: 50, 65, 84;
+			--color-primary-03: 100, 116, 139;
+			--color-primary-04: 210, 210, 220;
+			--color-primary-05: 255, 255, 255;
+			--color-secondary-01: 81, 147, 255;
+			--color-error: 255, 0, 0;
+			--color-success: 0, 183, 68;
+		}
+		&.light-mode {
+			--background-app-rgb: 228, 228, 248;
+			--color-primary-01: 210, 210, 220;
+			--color-primary-02: 210, 210, 220;
+			--color-primary-03: 100, 116, 139;
+			--color-primary-04: 50, 65, 84;
+			--color-primary-05: 30, 41, 59;
+			--color-secondary-01: 30, 41, 59;
+			--color-error: 255, 0, 0;
+			--color-success: 0, 183, 68;
+		}
+	}
 }
 
+:root {
+	direction: rtl;
+}
+html,
 body {
-    @apply bg-primary-01;
-  }
+	background-color: rgb(var(--background-app-rgb));
+}

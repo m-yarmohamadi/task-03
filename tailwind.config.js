@@ -1,4 +1,13 @@
 /** @type {import('tailwindcss').Config} */
+
+const withOpacity = (variableName) => {
+	return ({ opacityValue }) => {
+		if (opacityValue !== undefined) {
+			return `rgba(var(${variableName}),${opacityValue})`;
+		}
+		return `rgb(var(${variableName}))`;
+	};
+};
 module.exports = {
 	content: ['./pages/**/*.{js,ts,jsx,tsx,mdx}', './components/**/*.{js,ts,jsx,tsx,mdx}', './app/**/*.{js,ts,jsx,tsx,mdx}'],
 	theme: {
@@ -8,21 +17,17 @@ module.exports = {
 			},
 			colors: {
 				secondary: {
-					'01': '#5193ff',
-					200: '#BFC0CB',
-					600: '#6A6C87',
-					700: '#555775',
-					800: '#3F4264',
-					900: '#2A2D53',
+					'01': withOpacity('--color-secondary-01'),
 				},
 				primary: {
-					'01': '#1e293b',
-					'02': '#324154',
-					'03': '#64748b',
-					'04': '#d2d2dc',
-					'05': '#ffffff',
+					'01': withOpacity('--color-primary-01'),
+					'02': withOpacity('--color-primary-02'),
+					'03': withOpacity('--color-primary-03'),
+					'04': withOpacity('--color-primary-04'),
+					'05': withOpacity('--color-primary-05'),
 				},
-				error: '#FF0000',
+				error: withOpacity('--color-error'),
+				success: withOpacity('--color-success'),
 			},
 		},
 		container: {

@@ -16,7 +16,7 @@ const Panel = () => {
 								جستجو
 							</label>
 							<input
-								className='shadow rounded-md w-full py-2 bg-primary-01 px-3 text-primary-04 focus:outline-none focus:shadow-outline ring-1 ring-offset ring-primary-03 focus:ring-secondary-01'
+								className='shadow rounded-md w-full py-2 bg-primary-01 px-3 text-primary-04 focus:outline-none focus:shadow-outline ring-1 ring-offset ring-primary-03 focus:ring-success'
 								id='title'
 								type='text'
 							/>
@@ -28,7 +28,7 @@ const Panel = () => {
 								مرتب سازی
 							</label>
 							<div className='w-full'>
-								<select className='  shadow rounded-md w-full py-2 bg-primary-01 px-3 text-primary-04 focus:outline-none focus:shadow-outline ring-1 ring-offset ring-primary-03 focus:ring-secondary-01'>
+								<select className='  shadow rounded-md w-full py-2 bg-primary-01 px-3 text-primary-04 focus:outline-none focus:shadow-outline ring-1 ring-offset ring-primary-03 focus:ring-success'>
 									<option>صعودی</option>
 									<option>نزولی</option>
 								</select>
@@ -41,7 +41,7 @@ const Panel = () => {
 								دسته بندی
 							</label>
 							<div className='w-full'>
-								<select className='  shadow rounded-md w-full py-2 bg-primary-01 px-3 text-primary-04 focus:outline-none focus:shadow-outline ring-1 ring-offset ring-primary-03 focus:ring-secondary-01'>
+								<select className='  shadow rounded-md w-full py-2 bg-primary-01 px-3 text-primary-04 focus:outline-none focus:shadow-outline ring-1 ring-offset ring-primary-03 focus:ring-success'>
 									<option>دسته بندی 1</option>
 									<option>دسته بندی 2</option>
 									<option>دسته بندی 3</option>
@@ -63,7 +63,7 @@ const Panel = () => {
                             <span className='border border-primary-03 p-1 rounded-xl'>دسته</span>
                             <span className='border border-primary-04 bg-primary-02 p-1 rounded-full w-8 h-8'>43</span>
                             <button className='border border-error text-error hover:bg-error hover:text-primary-04 p-1 rounded-xl'>حذف</button>
-                            <button className='border border-secondary-01 text-secondary-01 hover:bg-secondary-01 hover:text-primary-04 p-1 rounded-xl'>ویرایش</button>
+                            <button className='border border-success text-success hover:bg-success hover:text-primary-04 p-1 rounded-xl'>ویرایش</button>
                         </div>
                     </div>
                 </div>
