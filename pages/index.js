@@ -1,18 +1,22 @@
-import Cart from '@/components/Cart';
-import Factor from '@/components/Factor';
+import AddCommodity from '@/components/AddCommodity';
+import Panel from '@/components/Panel';
 
 export default function Home() {
 	return (
-		<div className='xl:h-screen md:container flex flex-col justify-center items-center gap-y-20 py-32 mx-4'>
-			<div className='w-full flex justify-center md:justify-start items-center  mb-2'>
-				<h1 className=' font-extrabold text-2xl md:text-3xl text-secondary-800'>سبد دوره های شما</h1>
-			</div>
-			<div className='w-full grid grid-cols-1 lg:grid-cols-3  gap-y-24 lg:gap-x-8'>
-				<div className=' flex flex-col justify-between items-center col-span-2 gap-y-6 w-full'>
-					<Cart />
-					<Cart />
+		<div className='h-screen flex flex-col justify-between items-center w-full'>
+			<div className='w-full  flex flex-col justify-start items-center gap-8 py-8 '>
+				<div className='w-full flex  gap-4 justify-center items-center font-extrabold bg-primary-02 text-primary-04 p-4'>
+					<h1 className='  text-xl md:text-2xl '>نرم افزار موجودی انبار با استفاده از ریکت و تیلویند</h1>
+					<span className='w-8 h-8 flex justify-center items-center rounded-full bg-primary-03 p-2 border-2 border-primary-04 '>3</span>
 				</div>
-				<Factor />
+				<div className=' container w-full grid md:grid-cols-2 gap-16'>
+					<AddCommodity />
+					<Panel />
+				</div>
+			</div>
+			<div className='w-full flex justify-end items-start border-t border-primary-03 text-primary-03'>
+				<span className='px-4 font-serif text-sm'>yarmohamadi677@gmail.com:@1403</span>
+				
 			</div>
 		</div>
 	);
